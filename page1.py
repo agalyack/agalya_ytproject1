@@ -12,7 +12,7 @@ def dfinfo():
     if button1_clicked:
         st.write("Extracting data...")
         # taken from channels api
-        api_key="AIzaSyBz6O4MQih9awY6gsxRBIFKy5EKUsxmpXs"
+        api_key="extracted api key"
         api_service_name = "youtube"
         api_version = "v3"
         client_secrets_file = "YOUR_CLIENT_SECRET_FILE.json"
@@ -194,14 +194,14 @@ def sqlupload():
         
         
                     # Define MySQL connection parameters
-                    mysql_username = 'root'
-                    mysql_password = 'roots'
+                    mysql_username = 'user'
+                    mysql_password = 'yourpwd'
                     mysql_host = 'localhost'
                     mysql_port = '3306'
-                    mysql_database = 'ytproject'
+                    mysql_database = 'databasename'
 
         ############### inserting channel info with channel id as a primary key
-                    connection_str = f"mysql+mysqlconnector://{'root'}:{'roots'}@{'localhost'}:{'3306'}/{'ytproject'}"
+                    connection_str = f"mysql+mysqlconnector://{'user'}:{'yourpwd'}@{'localhost'}:{'3306'}/{'databasename'}"
 
         #creating sqlalchemy engine
                     engine = create_engine(connection_str)
